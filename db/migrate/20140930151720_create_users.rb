@@ -3,8 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :username
       t.string :password
-      t.boolean :admin, default: false
-
+      t.boolean :admin, default: false, null: false
     end
   end
 end
